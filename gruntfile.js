@@ -40,11 +40,11 @@ module.exports = function(grunt){
                     patterns: [
                         {
                             match: 'ENDERECO_DO_CSS',
-                            replacement: '/dist/styles/main.min.css'
+                            replacement: './styles/main.min.css'
                         },
                         {
                             match: 'ENDERECO_JS',
-                            replacement: '/dist/src/scripts/main.min.js'
+                            replacement: './src/scripts/main.min.js'
                         }
                     ]
                 },
