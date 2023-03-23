@@ -41,11 +41,7 @@ $(document).ready(function(){
             
             let internSum = 1;
             for(let i = 0; i < chances.length; i++){
-                
-                if(i == 0 && diceNum <= chances[i].value){
-                    result[0].innerHTML = eventNames[i].value;
-                    break;
-                } else if(diceNum >= internSum && diceNum <= chances[i].value + internSum){
+                if(diceNum >= internSum && diceNum <= chances[i].value + internSum){
                     result[0].innerHTML = eventNames[i].value;
                 }
                 internSum += parseInt(chances[i].value);
