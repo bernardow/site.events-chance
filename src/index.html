@@ -5,11 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Um belo Site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="@@ENDERECO_DO_CSS">
 </head>
 <body>
     <header>
-        <h1>Calculadora de probabilidades</h1>
+        <h1 style="font-family: 'Work Sans', sans-serif;">Calculadora de probabilidades</h1>
     </header>
     <main>
         <section class="add__events">
@@ -25,11 +28,15 @@
                             <label class="form__item__label" for="event-name">Nome do evento: </label>
                             <input class="form__item__control" type="text" id="event-name">
                             <label class="form__item__label" for="event-chance">Chance dele acontecer: </label>
-                            <input class="form__item__control" type="number" id="event-chance" min="1" step="10" max="100" value="1">
+                            <input class="form__item__control" type="number" id="event-chance" min="1" max="100" value="1">
                         </div>
                     </div>
+                    <label class="form__error">O número de porcentagens não fecha 100%</label>
                     <button class="btn form__submit" type="submit">Rodar</button>
                 </form>
+                <div class="result">
+                    <h2>O evento dessa rodada é: <span class="result__value"></span></h2>
+                </div>
             </div>
         </section>
     </main>
