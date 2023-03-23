@@ -52,7 +52,7 @@ module.exports = function(grunt){
                     {
                         expand: true,
                         flattern: true,
-                        src: ['./src/index.html'],
+                        src: ['./index.html'],
                         dest: 'dist/'
                     }
                 ]
